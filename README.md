@@ -8,7 +8,7 @@ Tema: Sistema de validação de arquivos digitais SPED
 
 # Qual o problema que pretendo resolver?
 
-Tempo elevado na validação dos arquivos digitais da SPED fiscal da empresa "Arcos Dourados"
+Tempo elevado na validação dos arquivos digitais da SPED fiscal, referente a empresa "Arcos Dourados"
 
 # Por que este "problema" é de fato um problema?
 
