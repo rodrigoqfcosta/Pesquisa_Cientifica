@@ -12,7 +12,9 @@ Tempo elevado na validação dos arquivos digitais da SPED fiscal, referente a e
 
 # Por que este "problema" é de fato um problema?
 
-Os arquivos digitais SPED é referente a cada mês do exercício fiscal da empresa, porem na questão da "Arcos Dourados" o sistema leva em torno de 10 horas para a validação de cada arquivo digital, a De Biasi foi contratada para validar cerca de 5 anos de exercício fiscal da Arcos Dourados, aproximadamente 60 arquivos digitais, sendo necessários 600 horas de trabalho. No entanto quando um arquivo estiver fora dos padrões de leitura do sistema SPED ocorrera um erro após o processamento do arquivo, sendo necessário a restruturação do arquivo e reinicializar o processo, levando assim mais 10 horas para validação.
+A De Biasi foi contratada pela Arcos Dourados para realizar o calculo da restituição da Escrituração Fiscal da Contribuição para o PIS/Pasep e da Cofins - EFD-Con dos exercícios de 2016 a 2020, são cerca de 60 arquivos para analise sendo necessários refente a cada mês do execício, no entanto, o maior dos problemas é o esquema de validação sistema fiscal SPED, que é demasiadamente ineficiente, assim tornado a vida dos colaboradores da De Biasi extremamente cansativa. 
+
+Durante a validação do arquivos digitais, o sistema SPED fiscal ira validar se o arquivo estão em conformidade com os parâmetros da Escrituração Fiscal Digital, impostas pela Instituição Normativa RFB nº 1252, de março de 2012 e o Ato Declaratório Executivo Cofis nº 020 de 14 de março de 2012. No caso da Arcos Dourados levara cerca de 10 horas para cada arquivo, 600 horas de analise interruptas de todos os arquivos, caso se estiver em conformidade com os parâmetros estabelecidos, do contrario será relatado o erro no final da validação, após as 10 horas de validação, isso não é conveniente, pois o prazo após receber todos os arquivos digitais será bem curto para tolerar erros nos arquivos.
 
 # Qual a proposta para solucionar o problema?
 
