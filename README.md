@@ -36,5 +36,13 @@ Primeiramente precisamos saber os parâmetros do arquivo digital para sua valida
 * | 9	| Controle e Encerramento do Arquivo Digital
 
 ##### Organização dos blocos:
-Todos os blocos devem ser organizados e dispostos na sequência estabelecida, iniciando-se com o bloco 0 (zero) e seus registros, na sequência o bloco A e seus registros correspondentes, depois os blocos C, D, F, I, M, P e 1 e, no final, o bloco 9, que encerra o arquivo digital, obrigatório conter todos os blocos no arquivo com seus registros.
-No sistema SADI haverá um script de validação para cada bloco, verificando os arquivos individualmente, bloco a bloco, a procura de inconsistências no padrão estabelecido gerando um relatório da situação, apontando para cada falha no arquivo em tempo real.
+Todos os blocos deverão ser organizados e dispostos na sequência estabelecida, iniciando-se com o bloco 0 (zero) e seus registros, na sequência o bloco A e seus registros correspondentes, depois os blocos C, D, F, I, M, P e 1 e, no final, o bloco 9, que encerra o arquivo digital, obrigatório conter todos os blocos no arquivo com seus registros.
+
+Algumas das características do arquivo: 
+•	Formato do arquivo em texto codificado em ASCII – ISSO 8859-1 (latin-1), não sendo aceitos campos compactados (packed decimal), zonados, binários, ponto flutuante (float point);
+•	O arquivo devera respeitar a hierarquia dos blocos;
+•	Os registros deveram sempre ser iniciados na primeira coluna (posição 1), podendo ter tamanho variado; 
+•	Não poderá haver linhas em branco
+
+No sistema SADI haverá um script Python que fara a validação de cada bloco, verificando os arquivos individualmente, bloco a bloco, a procura de inconsistências no padrão estabelecido gerando um relatório da situação, apontando para cada falha no arquivo em tempo real.
+
