@@ -23,7 +23,7 @@ No caso da Arcos Dourados, cada arquivo é referente a todas as notas ficais ger
 Atualmente está em desenvolvimento na De Biasi um sistema de validação denominado SADI “Sistema de Auditoria Digital Integrado”, com o intuito de validar os arquivos antes de serem encaminhados ao SPED fiscal, dessa forma agilizado a análise e evitando a revalidação no sistema do governo, que é o principal problema, dando ao analista fiscal mais autonomia na validação dos arquivos.
 Primeiramente precisamos saber os parâmetros do arquivo digital para sua validação, portanto temos algumas informações extraídas do guia prático EDF – Contribuições, que atualmente encontra-se na versão 1.33, que demonstra um padrão de validação por blocos cada parâmetro, listado abaixo:
 
-|BLOCO	|DESCRIÇÃO|
+|BLOCO	|DESCRIÇÃO||:----------:|:-------------:|
 |0	|Abertura de identificação e referencias|
 |A	|Documentos fiscais - Serviços (ISS)|
 |C	|Documentos fiscais I – Mercadorias (ICMS/IPI)|
