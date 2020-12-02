@@ -47,6 +47,6 @@ Algumas das características do arquivo:
 
 No sistema SADI haverá um script Python que fara a validação de cada bloco, verificando os arquivos individualmente, bloco a bloco, a procura de inconsistências no padrão estabelecido gerando um relatório da situação, apontando para cada falha no arquivo em tempo real.
 
-
 ###### Referências
-
+[SPED Fiscal](http://sped.rfb.gov.br/)  
+[Guia EFD-Contribuições](http://sped.rfb.gov.br/arquivo/download/4262)
