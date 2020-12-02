@@ -23,17 +23,18 @@ No caso da Arcos Dourados, cada arquivo é referente a todas as notas ficais ger
 Atualmente está em desenvolvimento na De Biasi um sistema de validação denominado SADI “Sistema de Auditoria Digital Integrado”, com o intuito de validar os arquivos antes de serem encaminhados ao SPED fiscal, dessa forma agilizado a análise e evitando a revalidação no sistema do governo, que é o principal problema, dando ao analista fiscal mais autonomia na validação dos arquivos.
 Primeiramente precisamos saber os parâmetros do arquivo digital para sua validação, portanto temos algumas informações extraídas do guia prático EDF – Contribuições, que atualmente encontra-se na versão 1.33, que demonstra um padrão de validação por blocos cada parâmetro, listado abaixo:
 
-##### |BLOCO	|DESCRIÇÃO|
-* | 0	| Abertura de identificação e referencias
-* | A	| Documentos fiscais - Serviços (ISS)
-* | C	| Documentos fiscais I – Mercadorias (ICMS/IPI)
-* | D	| Documentos fiscais II – Serviços (ICMS)
-* | F	| Demais Documentos e Operações
-* | I	| Operações das Instituições Financeiras e Assemelhadas, Seguradoras, Entidades de Previdência Privada e Operadoras de Planos de Assistência a Saúde
-* | M	| Apuração da Contribuição e Crédito de PIS/PASEP e da COFINS
-* | P	| Apuração da Contribuição Previdenciária sobre Receita Bruta
-* | 1	| Complemento da Escrituração – Controle de Saldo de Créditos e de Retenções, Operações Extemporâneas e Outras Informações
-* | 9	| Controle e Encerramento do Arquivo Digital
+|BLOCO|DESCRIÇÃO|
+|-----|----------|
+| 0	| Abertura de identificação e referencias |
+| A	| Documentos fiscais - Serviços (ISS) |
+| C	| Documentos fiscais I – Mercadorias (ICMS/IPI) |
+| D	| Documentos fiscais II – Serviços (ICMS) |
+| F	| Demais Documentos e Operações |
+| I	| Operações das Instituições Financeiras e Assemelhadas, Seguradoras, Entidades de Previdência Privada e Operadoras de Planos de Assistência a Saúde |
+| M	| Apuração da Contribuição e Crédito de PIS/PASEP e da COFINS |
+| P	| Apuração da Contribuição Previdenciária sobre Receita Bruta |
+| 1	| Complemento da Escrituração – Controle de Saldo de Créditos e de Retenções, Operações Extemporâneas e Outras Informações |
+| 9	| Controle e Encerramento do Arquivo Digital |
 
 ##### Organização dos blocos:
 Todos os blocos deverão ser organizados e dispostos na sequência estabelecida, iniciando-se com o bloco 0 (zero) e seus registros, na sequência o bloco A e seus registros correspondentes, depois os blocos C, D, F, I, M, P e 1 e, no final, o bloco 9, que encerra o arquivo digital, obrigatório conter todos os blocos no arquivo com seus registros.
@@ -45,4 +46,7 @@ Algumas das características do arquivo:
 *	Não poderá haver linhas em branco
 
 No sistema SADI haverá um script Python que fara a validação de cada bloco, verificando os arquivos individualmente, bloco a bloco, a procura de inconsistências no padrão estabelecido gerando um relatório da situação, apontando para cada falha no arquivo em tempo real.
+
+
+###### Referências
 
