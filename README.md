@@ -35,3 +35,6 @@ Primeiramente precisamos saber os parâmetros do arquivo digital para sua valida
 * | 1	| Complemento da Escrituração – Controle de Saldo de Créditos e de Retenções, Operações Extemporâneas e Outras Informações
 * | 9	| Controle e Encerramento do Arquivo Digital
 
+##### Organização dos blocos:
+Todos os blocos devem ser organizados e dispostos na sequência estabelecida, iniciando-se com o bloco 0 (zero) e seus registros, na sequência o bloco A e seus registros correspondentes, depois os blocos C, D, F, I, M, P e 1 e, no final, o bloco 9, que encerra o arquivo digital, obrigatório conter todos os blocos no arquivo com seus registros.
+No sistema SADI haverá um script de validação para cada bloco, verificando os arquivos individualmente, bloco a bloco, a procura de inconsistências no padrão estabelecido gerando um relatório da situação, apontando para cada falha no arquivo em tempo real.
